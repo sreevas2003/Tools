@@ -119,33 +119,42 @@ Step 3:
 
 
 ========================================================
+
 FILE NAME: htop_interview_questions.txt
+
 TOPIC: Linux Performance Tool - htop
+
 LEVEL: Beginner to Advanced
+
 ========================================================
 
 1. What is htop?
+
 htop is an interactive, real-time process monitoring tool for Linux. It is an enhanced version of the top command with better UI, per-core CPU visibility, and interactive process control.
 
 --------------------------------------------------------
 
 2. How is htop different from top?
+
 htop provides a color-coded interface, per-CPU core usage, tree view of processes, mouse support, and easier process killing and sorting compared to top.
 
 --------------------------------------------------------
 
 3. How do you start htop?
+
 By typing the command:
 htop
 
 --------------------------------------------------------
 
 4. What information does htop display by default?
+
 It displays CPU usage per core, memory usage, swap usage, load average, running processes, CPU%, memory%, runtime, and command name.
 
 --------------------------------------------------------
 
 5. What do the CPU colors in htop represent?
+
 Green: User-space processes  
 Red: Kernel-space processes  
 Blue: Low-priority processes  
@@ -154,131 +163,158 @@ Orange/Yellow: IRQ and softIRQ processing
 --------------------------------------------------------
 
 6. What does high red CPU usage indicate?
+
 High red CPU usage indicates heavy kernel activity, often due to drivers, interrupts, or kernel threads.
 
 --------------------------------------------------------
 
 7. What is RES memory in htop?
+
 RES (Resident Set Size) is the actual physical RAM currently used by a process.
 
 --------------------------------------------------------
 
 8. What is VIRT memory?
+
 VIRT is the total virtual memory allocated to a process, including shared libraries, mapped files, and swapped memory.
 
 --------------------------------------------------------
 
 9. What does SHR memory mean?
+
 SHR is shared memory used by a process, such as shared libraries.
 
 --------------------------------------------------------
 
 10. What is the difference between MEM and CACHE?
+
 MEM is actual application memory usage. CACHE is memory used by Linux for file caching, which can be freed if needed.
 
 --------------------------------------------------------
 
 11. What does process state 'D' mean?
+
 D state means uninterruptible sleep, usually waiting for I/O operations like disk or driver responses.
 
 --------------------------------------------------------
 
 12. Why are D-state processes dangerous?
+
 They cannot be killed easily and often indicate disk I/O issues or buggy kernel drivers.
 
 --------------------------------------------------------
 
 13. What is a zombie process in htop?
+
 A zombie process (state Z) has finished execution but still exists because its parent has not collected its exit status.
 
 --------------------------------------------------------
 
 14. How do you kill a process using htop?
+
 Select the process and press F9, then choose the signal (SIGTERM or SIGKILL).
 
 --------------------------------------------------------
 
 15. What is SIGTERM vs SIGKILL?
+
 SIGTERM (15) requests graceful termination.  
 SIGKILL (9) forcefully terminates the process without cleanup.
 
 --------------------------------------------------------
 
 16. How do you sort processes in htop?
+
 Press F6 and select a column such as CPU%, MEM%, or TIME.
 
 --------------------------------------------------------
 
 17. How do you filter processes in htop?
+
 Press F4 and type the process name to filter.
 
 --------------------------------------------------------
 
 18. What is tree view in htop?
+
 Tree view shows parent-child relationships between processes, useful for debugging forked or multi-threaded applications.
 
 --------------------------------------------------------
 
 19. How do you enable tree view?
+
 Press F5.
 
 --------------------------------------------------------
 
 20. How can htop help in debugging performance issues?
+
 It helps identify CPU hogs, memory leaks, I/O waits, runaway threads, and kernel-heavy processes in real time.
 
 --------------------------------------------------------
 
 21. How do you monitor multi-core CPU usage?
+
 htop shows a separate bar for each CPU core at the top.
 
 --------------------------------------------------------
 
 22. What is load average in htop?
+
 Load average represents the number of processes waiting for CPU or I/O over 1, 5, and 15 minutes.
 
 --------------------------------------------------------
 
 23. What does high load average but low CPU usage indicate?
+
 It usually indicates I/O bottlenecks or blocked processes.
 
 --------------------------------------------------------
 
 24. How do you change process priority in htop?
+
 Use F7 to increase priority and F8 to decrease priority (nice value).
 
 --------------------------------------------------------
 
 25. What permissions are required to kill all processes?
+
 Root or sudo privileges are required to kill system or other user processes.
 
 --------------------------------------------------------
 
 26. Can htop replace perf or ftrace?
+
 No. htop is for monitoring. perf and ftrace are for detailed profiling and kernel tracing.
 
 --------------------------------------------------------
 
 27. Is htop suitable for embedded Linux systems?
+
 Yes. htop is commonly used on embedded Linux boards for real-time debugging and performance monitoring.
 
 --------------------------------------------------------
 
 28. Where is htop configuration stored?
+
 In the user's home directory under:
 ~/.config/htop/htoprc
 
 --------------------------------------------------------
 
 29. What does TIME+ column indicate?
+
 It shows the total CPU time consumed by a process since it started.
 
 --------------------------------------------------------
 
 30. When should htop be the first tool you use?
+
 When the system feels slow, hangs, overheats, or behaves unexpectedly, htop is usually the first diagnostic tool.
 
 ========================================================
+
 END OF FILE
+
 ========================================================
 
