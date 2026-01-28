@@ -12,10 +12,16 @@ GDB (GNU Debugger) lets you:
   
   Debug embedded + Linux apps like a pro
 
-
+------
 
   <img width="1692" height="1200" alt="image" src="https://github.com/user-attachments/assets/66b3b9f0-bc3c-4f25-a2ac-4adc1b45ad3b" />
 
+---------------------
+
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/a630cbca-138e-4766-a02c-e04a2e938cf5" />
+
+---------------------
 
 **firstly check**
 
